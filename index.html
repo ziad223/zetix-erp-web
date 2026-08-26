@@ -401,8 +401,11 @@
     </section>
 
     <!-- MODULES SLIDER TRACK -->
-    <section id="modules" class="border-y border-slate-200/80 bg-slate-50/70 py-10">
-      <div class="container-xl">
+    <section id="modules" class="border-y border-slate-200/80 bg-slate-50/70 py-10 relative overflow-hidden">
+      <!-- Subtle Tech Background Pattern -->
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-[0.04] mix-blend-multiply pointer-events-none" alt="Abstract Tech Background">
+      
+      <div class="container-xl relative z-10">
         <div class="mb-6 flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 class="text-2xl font-black text-slate-950" data-i18n="modulesTitle">كل أقسام منشأتك في منصة واحدة
@@ -507,7 +510,7 @@
     <section id="about" class="py-20 lg:py-28">
       <div class="container-xl grid gap-12 lg:grid-cols-[.85fr_1.15fr]">
         <div class="lg:sticky lg:top-28 lg:self-start">
-          <span class="text-xs font-black tracking-widest uppercase text-brand">ZETIX ERP VALUE</span>
+          <span class="text-xs font-black tracking-widest uppercase text-brand" data-i18n="valueEyebrow">قيمة ZETIX ERP</span>
           <h2 class="mt-3 text-3xl font-black leading-tight sm:text-4xl text-slate-950" data-i18n="whyTitle">
             شريك تقني يفهم أعمالك قبل أن يبدأ بالبرمجة
           </h2>
@@ -518,6 +521,15 @@
               <span data-i18n="demo">اطلب عرضاً توضيحياً</span>
               <i data-lucide="arrow-left" class="w-4 h-4"></i>
             </button>
+          </div>
+          
+          <!-- Professional Image Banner for About Section -->
+          <div class="mt-10 rounded-[2rem] overflow-hidden shadow-2xl relative border border-slate-100 group">
+             <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" alt="ZETIX ERP Business Team Analysis" class="w-full object-cover h-[280px] group-hover:scale-105 transition-transform duration-700">
+             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none"></div>
+             <div class="absolute bottom-4 right-5 left-5 text-white">
+                <span class="text-lg font-black drop-shadow-md" data-i18n="aboutBannerText">فريق خبراء ZETIX</span>
+             </div>
           </div>
         </div>
 
@@ -572,7 +584,7 @@
       <div class="dark-hero-grid absolute inset-0 pointer-events-none opacity-40"></div>
       <div class="container-xl relative grid items-center gap-12 lg:grid-cols-2">
         <div>
-          <span class="text-xs font-black tracking-widest text-blue-400 uppercase">POWERED BY ERPNEXT</span>
+          <span class="text-xs font-black tracking-widest text-blue-400 uppercase" data-i18n="poweredEyebrow">مدعوم بنظام ERPNext</span>
           <h2 class="mt-3 text-3xl font-black leading-tight sm:text-4xl" data-i18n="erpTitle">
             منصة عالمية نبني عليها حلولاً مخصصة تناسب بيئة الأعمال السعودية
           </h2>
@@ -586,6 +598,12 @@
               class="rounded-2xl border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-black text-white hover:bg-white/10 transition-all">
               استعرض الميزات والأنظمة
             </a>
+          </div>
+
+          <!-- Professional Image Banner for Solutions Section -->
+          <div class="mt-12 rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(0,102,255,0.15)] relative group">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" alt="Digital Transformation & ERPNext" class="w-full object-cover h-[260px] opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand/40 to-transparent mix-blend-overlay pointer-events-none"></div>
           </div>
         </div>
 
@@ -630,14 +648,76 @@
       </div>
     </section>
 
+    <!-- PLATFORM SHOWCASE SECTION -->
+    <section id="showcase" class="py-20 lg:py-28 bg-slate-50 relative overflow-hidden border-t border-slate-200/80">
+      <!-- Background Elements -->
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-200/40 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="container-xl relative z-10">
+        <div class="mx-auto max-w-3xl text-center mb-16">
+          <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="showcaseEyebrow">استعراض المنصة</span>
+          <h2 class="mt-3 text-3xl font-black sm:text-5xl text-slate-950 leading-tight" data-i18n="showcaseTitle">تصميم عصري يضع كل بياناتك في متناول يدك</h2>
+          <p class="mt-4 text-base font-medium leading-8 text-slate-600" data-i18n="showcaseDesc">واجهة مستخدم تفاعلية، لوحات تحكم قابلة للتخصيص، وتحليلات لحظية تساعدك على اتخاذ قرارات دقيقة وسريعة.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-[1.2fr_.8fr] gap-8 items-center">
+          <!-- Large Image Card -->
+          <div class="rounded-[2.5rem] p-3 bg-white border border-slate-200 shadow-2xl relative group overflow-hidden">
+             <div class="rounded-[2rem] overflow-hidden relative bg-slate-100 h-[450px]">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop" alt="ERP Dashboard Analytics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 right-8 left-8 text-white">
+                   <h3 class="text-2xl font-black drop-shadow-lg" data-i18n="showcaseImg1Title">مؤشرات أداء تفاعلية (KPIs)</h3>
+                   <p class="text-sm font-medium opacity-90 mt-2" data-i18n="showcaseImg1Desc">راقب مبيعاتك، مصاريفك، ومخزونك في شاشة واحدة متصلة بالبيانات الحية.</p>
+                </div>
+             </div>
+          </div>
+
+          <!-- Vertical Stack of Features/Images -->
+          <div class="space-y-6">
+             <div class="rounded-[2.5rem] bg-slate-950 p-8 text-white border border-slate-800 shadow-xl relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 mix-blend-overlay">
+                <div class="relative z-10">
+                   <div class="w-12 h-12 rounded-2xl bg-brand/20 text-brand flex items-center justify-center mb-5 backdrop-blur-md">
+                      <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                   </div>
+                   <h3 class="text-xl font-black" data-i18n="showcaseFeat1Title">تقارير ديناميكية ذكية</h3>
+                   <p class="mt-3 text-sm text-slate-300 leading-7 font-medium" data-i18n="showcaseFeat1Desc">صمم تقاريرك الخاصة بالسحب والإفلات، وصدرها بصيغ متعددة بضغطة زر واحدة.</p>
+                </div>
+             </div>
+
+             <div class="rounded-[2.5rem] bg-white p-8 border border-slate-200 shadow-md hover:shadow-xl transition-shadow duration-500">
+                <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center mb-5">
+                   <i data-lucide="mouse-pointer-click" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-black text-slate-950" data-i18n="showcaseFeat2Title">تجربة مستخدم لا مثيل لها</h3>
+                <p class="mt-3 text-sm text-slate-600 leading-7 font-medium" data-i18n="showcaseFeat2Desc">شاشات مصممة بعناية فائقة لتقليل النقرات وتسهيل وصول الموظفين لأدواتهم اليومية دون تعقيد.</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTORS AND INDUSTRIES -->
     <section id="sectors" class="py-20 lg:py-28">
       <div class="container-xl">
         <div class="mx-auto max-w-2xl text-center">
-          <span class="text-xs font-black tracking-widest text-brand uppercase">TARGET SECTORS</span>
+          <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="sectorsEyebrow">القطاعات المستهدفة</span>
           <h2 class="mt-3 text-3xl font-black sm:text-4xl text-slate-950" data-i18n="sectorsTitle">حلول مرنة تناسب مختلف
             القطاعات الاقتصادية</h2>
           <p class="mt-4 text-sm font-medium leading-7 text-slate-600" data-i18n="sectorsDesc">تم تصميم حلولنا لتلبي احتياجات الشركات التجارية، الخدمية، المصانع، والمجموعات متعددة النشاطات.</p>
+        </div>
+
+        <!-- Full Width Banner for Sectors -->
+        <div class="mt-12 rounded-[2.5rem] overflow-hidden relative shadow-soft h-[320px] group">
+           <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop" alt="Corporate Sectors ZETIX" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+           <div class="absolute inset-0 bg-slate-900/40 mix-blend-multiply"></div>
+           <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-3xl">
+                 <span class="text-white text-xl sm:text-2xl font-black drop-shadow-md" data-i18n="sectorsBannerText">نغطي كافة القطاعات بمرونة واحترافية</span>
+              </div>
+           </div>
         </div>
 
         <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -673,15 +753,25 @@
     </section>
 
     <!-- IMPLEMENTATION METHODOLOGY / TIMELINE -->
-    <section class="bg-slate-50/80 py-20 lg:py-28 border-y border-slate-200/80">
+    <section class="bg-slate-50/80 py-20 lg:py-28 border-y border-slate-200/80 relative">
       <div class="container-xl grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
-        <div>
+        <div class="lg:sticky lg:top-28 lg:self-start">
           <span class="text-xs font-black tracking-widest text-brand uppercase"
-            data-i18n="methodologyEyebrow">METHODOLOGY</span>
+            data-i18n="methodologyEyebrow">المنهجية</span>
           <h2 class="mt-3 text-3xl font-black sm:text-4xl text-slate-950" data-i18n="lifecycleTitle">رحلة تطبيق النظام
             من الدراسة إلى الدعم المستمر</h2>
           <p class="mt-4 text-sm font-medium leading-8 text-slate-600" data-i18n="lifecycleDesc">منهجية واضحة ومجربة
             تضمن انتقال منشأتك إلى النظام الجديد بدون توقف عملياتك اليومية.</p>
+
+          <!-- Vertical Banner Image -->
+          <div class="mt-10 rounded-[2rem] overflow-hidden shadow-2xl relative border border-slate-200 group">
+             <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop" alt="Methodology and Strategy" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-1000">
+             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent"></div>
+             <div class="absolute bottom-6 right-6 left-6 text-white text-right">
+                <span class="inline-block px-3 py-1 bg-brand rounded-full text-xs font-black mb-2" data-i18n="methBannerTag">منهجية معتمدة</span>
+                <h3 class="text-xl font-black drop-shadow-md" data-i18n="methBannerTitle">ننتقل بك نحو المستقبل خطوة بخطوة</h3>
+             </div>
+          </div>
         </div>
 
         <div class="space-y-6 relative">
@@ -753,7 +843,7 @@
       <div class="container-xl">
         <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
-            <span class="text-xs font-black tracking-widest text-brand uppercase">SERVICES</span>
+            <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="servicesEyebrow">الخدمات</span>
             <h2 class="mt-3 text-3xl font-black sm:text-4xl text-slate-950" data-i18n="servicesTitle">خدماتنا المتخصصة
               في أنظمة ERP</h2>
             <p class="mt-3 text-sm font-medium text-slate-600" data-i18n="servicesDesc">منظومة خدمات كاملة تشمل
@@ -765,40 +855,82 @@
         </div>
 
         <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <article class="service-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-            <i data-lucide="clipboard-list" class="w-7 h-7 text-brand"></i>
-            <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="serv1Title">Business Analysis</h3>
-            <p class="mt-2 text-sm leading-7 font-medium text-slate-600" data-i18n="serv1Desc">تحليل متطلبات الأعمال، توثيق دورة المستندات، وتحديد نقاط التحسين التشغيلي.</p>
+          <!-- Service 1: Business Analysis -->
+          <article class="relative rounded-[2rem] overflow-hidden group h-[340px] shadow-md hover:shadow-2xl hover:shadow-brand/20 transition-all duration-500 border border-slate-200/50">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="تحليل الأعمال" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent"></div>
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-right z-10">
+              <div class="mb-4 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md grid place-items-center text-white border border-white/20 transition-all duration-500 group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                 <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white drop-shadow-lg" data-i18n="serv1Title">تحليل الأعمال</h3>
+              <p class="mt-3 text-sm leading-7 font-medium text-slate-200 opacity-90 transition-opacity duration-300" data-i18n="serv1Desc">تحليل متطلبات الأعمال، توثيق دورة المستندات، وتحديد نقاط التحسين التشغيلي.</p>
+            </div>
           </article>
 
-          <article class="service-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-            <i data-lucide="settings-2" class="w-7 h-7 text-brand"></i>
-            <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="serv2Title">ERPNext Setup & Config</h3>
-            <p class="mt-2 text-sm leading-7 font-medium text-slate-600" data-i18n="serv2Desc">إعداد وتخصيص دليل الحسابات، المستودعات، مراكز التكلفة والصلاحيات.</p>
+          <!-- Service 2: Setup & Config -->
+          <article class="relative rounded-[2rem] overflow-hidden group h-[340px] shadow-md hover:shadow-2xl hover:shadow-brand/20 transition-all duration-500 border border-slate-200/50">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="إعداد وتخصيص النظام" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent"></div>
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-right z-10">
+              <div class="mb-4 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md grid place-items-center text-white border border-white/20 transition-all duration-500 group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                 <i data-lucide="settings-2" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white drop-shadow-lg" data-i18n="serv2Title">إعداد وتخصيص النظام</h3>
+              <p class="mt-3 text-sm leading-7 font-medium text-slate-200 opacity-90 transition-opacity duration-300" data-i18n="serv2Desc">إعداد وتخصيص دليل الحسابات، المستودعات، مراكز التكلفة والصلاحيات.</p>
+            </div>
           </article>
 
-          <article class="service-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-            <i data-lucide="code-xml" class="w-7 h-7 text-brand"></i>
-            <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="serv3Title">Customization & Apps</h3>
-            <p class="mt-2 text-sm leading-7 font-medium text-slate-600" data-i18n="serv3Desc">تطوير تطبيقات وتعديلات برمجية خاصة بأداء متميز وتكامل سلس.</p>
+          <!-- Service 3: Customization & Apps -->
+          <article class="relative rounded-[2rem] overflow-hidden group h-[340px] shadow-md hover:shadow-2xl hover:shadow-brand/20 transition-all duration-500 border border-slate-200/50">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="تطوير البرمجيات" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent"></div>
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-right z-10">
+              <div class="mb-4 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md grid place-items-center text-white border border-white/20 transition-all duration-500 group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                 <i data-lucide="code-xml" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white drop-shadow-lg" data-i18n="serv3Title">تطوير التطبيقات</h3>
+              <p class="mt-3 text-sm leading-7 font-medium text-slate-200 opacity-90 transition-opacity duration-300" data-i18n="serv3Desc">تطوير تطبيقات وتعديلات برمجية خاصة بأداء متميز وتكامل سلس.</p>
+            </div>
           </article>
 
-          <article class="service-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-            <i data-lucide="plug" class="w-7 h-7 text-brand"></i>
-            <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="serv4Title">System Integration (API)</h3>
-            <p class="mt-2 text-sm leading-7 font-medium text-slate-600" data-i18n="serv4Desc">ربط ERPNext مع منصات التجارة الإلكترونية، بوابات الدفع، وهيئة الزكاة ZATCA.</p>
+          <!-- Service 4: Integration (API) -->
+          <article class="relative rounded-[2rem] overflow-hidden group h-[340px] shadow-md hover:shadow-2xl hover:shadow-brand/20 transition-all duration-500 border border-slate-200/50">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop" alt="ربط وتكامل الأنظمة" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent"></div>
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-right z-10">
+              <div class="mb-4 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md grid place-items-center text-white border border-white/20 transition-all duration-500 group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                 <i data-lucide="plug" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white drop-shadow-lg" data-i18n="serv4Title">ربط وتكامل الأنظمة</h3>
+              <p class="mt-3 text-sm leading-7 font-medium text-slate-200 opacity-90 transition-opacity duration-300" data-i18n="serv4Desc">ربط ERPNext مع منصات التجارة الإلكترونية، بوابات الدفع، وهيئة الزكاة ZATCA.</p>
+            </div>
           </article>
 
-          <article class="service-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-            <i data-lucide="database-zap" class="w-7 h-7 text-brand"></i>
-            <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="serv5Title">Data Migration Services</h3>
-            <p class="mt-2 text-sm leading-7 font-medium text-slate-600" data-i18n="serv5Desc">تجميع وتنظيف البيانات القديمة ونقلها بأمان التام للنظام الجديد.</p>
+          <!-- Service 5: Data Migration -->
+          <article class="relative rounded-[2rem] overflow-hidden group h-[340px] shadow-md hover:shadow-2xl hover:shadow-brand/20 transition-all duration-500 border border-slate-200/50">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="ترحيل البيانات" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent"></div>
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-right z-10">
+              <div class="mb-4 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md grid place-items-center text-white border border-white/20 transition-all duration-500 group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                 <i data-lucide="database-zap" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white drop-shadow-lg" data-i18n="serv5Title">ترحيل ونقل البيانات</h3>
+              <p class="mt-3 text-sm leading-7 font-medium text-slate-200 opacity-90 transition-opacity duration-300" data-i18n="serv5Desc">تجميع وتنظيف البيانات القديمة ونقلها بأمان تام للنظام الجديد.</p>
+            </div>
           </article>
 
-          <article class="service-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-            <i data-lucide="life-buoy" class="w-7 h-7 text-brand"></i>
-            <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="serv6Title">Training & Ongoing Support</h3>
-            <p class="mt-2 text-sm leading-7 font-medium text-slate-600" data-i18n="serv6Desc">تدريب الفرق، خطط دعم فني مستمرة SLA وتحديثات دورية مرنة.</p>
+          <!-- Service 6: Training & Support -->
+          <article class="relative rounded-[2rem] overflow-hidden group h-[340px] shadow-md hover:shadow-2xl hover:shadow-brand/20 transition-all duration-500 border border-slate-200/50">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" alt="التدريب والدعم" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent"></div>
+            <div class="absolute inset-0 p-8 flex flex-col justify-end text-right z-10">
+              <div class="mb-4 h-14 w-14 rounded-2xl bg-white/10 backdrop-blur-md grid place-items-center text-white border border-white/20 transition-all duration-500 group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_20px_rgba(0,102,255,0.4)]">
+                 <i data-lucide="life-buoy" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white drop-shadow-lg" data-i18n="serv6Title">التدريب والدعم المستمر</h3>
+              <p class="mt-3 text-sm leading-7 font-medium text-slate-200 opacity-90 transition-opacity duration-300" data-i18n="serv6Desc">تدريب الفرق، خطط دعم فني مستمرة وتحديثات دورية مرنة.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -820,7 +952,7 @@
           <article
             class="pricing-card rounded-3xl border border-slate-200 bg-white p-8 shadow-sm flex flex-col justify-between">
             <div>
-              <span class="text-xs font-black tracking-widest text-slate-400 uppercase">STARTER</span>
+              <span class="text-xs font-black tracking-widest text-slate-400 uppercase" data-i18n="pack1Eyebrow">الباقة الأساسية</span>
               <h3 class="mt-3 text-2xl font-black text-slate-950" data-i18n="pack1Title">الباقة الجاهزة</h3>
               <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="pack1Desc">مناسبة للمؤسسات والشركات الناشئة التي تحتاج
                 وظائف المحاسبة والمبيعات والمخزون الأساسية.</p>
@@ -842,7 +974,7 @@
               RECOMMENDED / الأكثر طلباً
             </span>
             <div>
-              <span class="text-xs font-black tracking-widest text-brand uppercase">CUSTOM ENTERPRISE</span>
+              <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="pack2Eyebrow">نظام المؤسسات المخصص</span>
               <h3 class="mt-3 text-2xl font-black text-slate-950" data-i18n="pack2Title">نظام ERP مخصص</h3>
               <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="pack2Desc">للشركات المتوسطة التي تتطلب تحليل دورة العمل،
                 تخصيص شاشات، تقارير خاصة، وتكاملات خارجية.</p>
@@ -860,7 +992,7 @@
           <article
             class="pricing-card rounded-3xl border border-slate-200 bg-white p-8 shadow-sm flex flex-col justify-between">
             <div>
-              <span class="text-xs font-black tracking-widest text-slate-400 uppercase">HOLDING / GROUPS</span>
+              <span class="text-xs font-black tracking-widest text-slate-400 uppercase" data-i18n="pack3Eyebrow">المجموعات القابضة</span>
               <h3 class="mt-3 text-2xl font-black text-slate-950" data-i18n="pack3Title">المجموعات القابضة</h3>
               <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="pack3Desc">للمجموعات ذات الشركات التابعة المتعددة،
                 المصانع، وخطوط الإنتاج والتكاذب المعقد.</p>
@@ -881,8 +1013,7 @@
     <section id="faq" class="py-20 lg:py-28 relative overflow-hidden bg-slate-50/50">
       <div class="container-xl max-w-4xl relative z-10">
         <div class="text-center">
-          <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="faqEyebrow">FREQUENTLY ASKED
-            QUESTIONS</span>
+          <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="faqEyebrow">الأسئلة الشائعة</span>
           <h2 class="mt-3 text-3xl font-black sm:text-4xl text-slate-950" data-i18n="faqTitle">الأسئلة الشائعة حول
             ERPNext و ZETIX</h2>
           <p class="mt-4 text-sm font-medium leading-8 text-slate-600 max-w-2xl mx-auto" data-i18n="faqDesc">كل ما تحتاج
@@ -990,10 +1121,14 @@
     <!-- CONTACT CTA SECTION -->
     <section id="contact" class="pb-20 lg:pb-28">
       <div class="container-xl">
-        <div class="overflow-hidden rounded-[36px] bg-slate-950 text-white shadow-2xl border border-slate-800">
-          <div class="grid lg:grid-cols-[1.05fr_.95fr]">
+        <div class="overflow-hidden rounded-[36px] bg-slate-950 text-white shadow-2xl border border-slate-800 relative group">
+          <!-- CTA Background Banner -->
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition-opacity duration-1000" alt="Corporate Office">
+          <div class="absolute inset-0 bg-gradient-to-l from-slate-950/95 via-slate-900/80 to-slate-950/40"></div>
+          
+          <div class="grid lg:grid-cols-[1.05fr_.95fr] relative z-10">
             <div class="p-8 lg:p-14">
-              <span class="text-xs font-black tracking-widest text-blue-400 uppercase">TALK TO ZETIX ERP</span>
+              <span class="text-xs font-black tracking-widest text-blue-400 uppercase" data-i18n="contactEyebrow">تواصل مع ZETIX ERP</span>
               <h2 class="mt-3 text-3xl font-black sm:text-4xl leading-tight" data-i18n="readyTitle">هل تحتاج نظام ERP
                 مطابق لطريقة عمل شركتك؟</h2>
               <p class="mt-4 text-sm font-medium leading-8 text-slate-300" data-i18n="readyDesc">
@@ -1180,7 +1315,7 @@
   </div>
 
   <!-- Custom JavaScript -->
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js?v=2.0"></script>
 </body>
 
 </html>
