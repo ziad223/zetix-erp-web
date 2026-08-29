@@ -95,6 +95,10 @@
     }
   }
   </script>
+<style>
+    /* Hide Netlify Badge */
+    a[href*="netlify.com"] { display: none !important; }
+</style>
 </head>
 
 <body class="bg-white font-cairo text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-950">
@@ -117,7 +121,7 @@
   <!-- Header Navigation -->
   <header data-header
     class="glass-header fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 transition-all duration-300">
-    <div class="container-xl flex h-[82px] items-center justify-between gap-6">
+    <div class="container-xl flex h-[96px] items-center justify-between gap-6">
       <!-- Official ZETIX Logo Image -->
       <a href="index.html" class="flex items-center shrink-0 group py-1">
         <img src="assets/images/zetix-logo.png" alt="ZETIX Integration Business Solutions"
@@ -205,7 +209,7 @@
             <span data-i18n="eyebrow">حلول ERP مرنة ومستدامة مبنية على ERPNext</span>
           </div>
 
-          <h1 class="text-4xl font-black leading-[1.4] tracking-tight text-slate-950 sm:text-5xl lg:text-[52px] lg:leading-[1.35] py-2 mx-auto lg:mx-0">
+          <h1 class="text-4xl font-black leading-[1.5] tracking-tight text-slate-950 sm:text-5xl lg:text-[52px] lg:leading-[1.5] py-2 mx-auto lg:mx-0">
             <span data-i18n="heroTitle1">نحوّل عمليات شركتك إلى</span><br>
             <span class="text-brand" data-i18n="heroTitle2">نظام ERP واحد متكامل</span>
           </h1>
@@ -239,6 +243,9 @@
             </span>
             <span class="inline-flex items-center gap-2">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-brand"></i> <span data-i18n="heroBadge3">الربط والدعم الفني</span>
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand"></i> <span data-i18n="heroBadge4">مدعوم بـ الذكاء الاصطناعي (AI)</span>
             </span>
           </div>
         </div>
@@ -430,10 +437,7 @@
               متكاملة</h2>
             <p class="mt-1 text-sm font-medium text-slate-600" data-i18n="modulesDesc">اختر الوحدة التي تحتاجها الآن، وأضف المزيد بسلاسة عندما تتوسع أعمالك.</p>
           </div>
-          <a href="#contact" class="inline-flex items-center gap-2 text-sm font-black text-brand hover:underline">
-            <span data-i18n="viewModules">استعرض جميع الوحدات والميزات</span>
-            <i data-lucide="arrow-left" class="w-4 h-4"></i>
-          </a>
+          
         </div>
 
         <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
@@ -577,7 +581,7 @@
       <div class="container-xl grid gap-12 lg:grid-cols-[.85fr_1.15fr]">
         <div class="lg:sticky lg:top-28 lg:self-start">
           <span class="text-xs font-black tracking-widest uppercase text-brand" data-i18n="valueEyebrow">قيمة ZETIX ERP</span>
-          <h2 class="mt-3 text-3xl font-black leading-tight sm:text-4xl text-slate-950" data-i18n="whyTitle">
+          <h2 class="mt-3 text-3xl font-black leading-[1.5] sm:text-4xl text-slate-950" data-i18n="whyTitle">
             شريك تقني يفهم أعمالك قبل أن يبدأ بالبرمجة
           </h2>
           <p class="mt-5 text-base font-medium leading-8 text-slate-600" data-i18n="whyDesc">لا نبدأ من برنامج تقليدي ونفرضه على العميل، بل نبدأ بدراسة العمليات، المستخدمين، الصلاحيات، والتقارير الفعلية، ثم نخصّص ونطوّر ERPNext ليلائم حجم وتطلعات منشأتك.</p>
@@ -651,7 +655,7 @@
       <div class="container-xl relative grid items-center gap-12 lg:grid-cols-2">
         <div>
           <span class="text-xs font-black tracking-widest text-blue-400 uppercase" data-i18n="poweredEyebrow">مدعوم بنظام ERPNext</span>
-          <h2 class="mt-3 text-3xl font-black leading-tight sm:text-4xl" data-i18n="erpTitle">
+          <h2 class="mt-3 text-3xl font-black leading-[1.5] sm:text-4xl" data-i18n="erpTitle">
             منصة عالمية نبني عليها حلولاً مخصصة تناسب بيئة الأعمال السعودية
           </h2>
           <p class="mt-5 text-base font-medium leading-8 text-slate-300" data-i18n="erpDesc">نستخدم ERPNext كمنصة مفتوحة وقابلة للتوسع بشكل مطلق، ونقوم نحن بكافة أعمال التحليل والإعداد والتعديل البرمجي لضمان توافق تام مع متطلبات هيئة الزكاة والضريبة والجمارك (ZATCA Phase 2).</p>
@@ -723,7 +727,7 @@
       <div class="container-xl relative z-10">
         <div class="mx-auto max-w-3xl text-center mb-16">
           <span class="text-xs font-black tracking-widest text-brand uppercase" data-i18n="showcaseEyebrow">استعراض المنصة</span>
-          <h2 class="mt-3 text-3xl font-black sm:text-5xl text-slate-950 leading-tight" data-i18n="showcaseTitle">تصميم عصري يضع كل بياناتك في متناول يدك</h2>
+          <h2 class="mt-3 text-3xl font-black sm:text-5xl text-slate-950 leading-[1.5]" data-i18n="showcaseTitle">تصميم عصري يضع كل بياناتك في متناول يدك</h2>
           <p class="mt-4 text-base font-medium leading-8 text-slate-600" data-i18n="showcaseDesc">واجهة مستخدم تفاعلية، لوحات تحكم قابلة للتخصيص، وتحليلات لحظية تساعدك على اتخاذ قرارات دقيقة وسريعة.</p>
         </div>
 
@@ -777,7 +781,7 @@
 
         <!-- Full Width Banner for Sectors -->
         <div class="mt-12 rounded-[2.5rem] overflow-hidden relative shadow-soft h-[320px] group">
-           <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop" alt="Corporate Sectors ZETIX" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+           <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1600&auto=format&fit=crop" alt="Corporate Sectors ZETIX" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
            <div class="absolute inset-0 bg-slate-900/40 mix-blend-multiply"></div>
            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div class="bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-3xl">
@@ -787,32 +791,74 @@
         </div>
 
         <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right">
+          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right group relative overflow-hidden">
             <div class="h-12 w-12 grid place-items-center rounded-2xl bg-blue-50 text-brand"><i
                 data-lucide="shopping-bag" class="w-6 h-6"></i></div>
             <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="sec1Title">التجارة والتوزيع</h3>
-            <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="sec1Desc">إدارة المبيعات، الشراء، المستودعات الفردية والمتعددة، وتتبع العملاء والموردين بدقة.</p>
+            <div class="mt-3 text-sm leading-7 font-medium text-slate-600 transition-all duration-300">
+               <p class="group-hover:hidden" data-i18n="sec1Desc">إدارة المبيعات، الشراء، المستودعات الفردية والمتعددة، وتتبع العملاء والموردين بدقة.</p>
+               <ul class="hidden group-hover:block list-disc list-inside space-y-1 text-xs">
+                  <li>تجارة الجملة والتجزئة</li>
+                  <li>الاستيراد والتصدير والوكالات</li>
+                  <li>توزيع المواد الغذائية والأدوية</li>
+                  <li>مستحضرات التجميل والعناية</li>
+                  <li>الملابس والأحذية والأثاث</li>
+                  <li>الأجهزة والإلكترونيات</li>
+                  <li>قطع غيار السيارات والمعدات</li>
+               </ul>
+            </div>
           </article>
 
-          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right">
+          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right group relative overflow-hidden">
             <div class="h-12 w-12 grid place-items-center rounded-2xl bg-sky-50 text-sky-600"><i data-lucide="factory"
                 class="w-6 h-6"></i></div>
             <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="sec2Title">التصنيع والإنتاج</h3>
-            <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="sec2Desc">قائمة المواد (BOM)، أوامر الإنتاج، تخطيط الاحتياجات، وحساب التكاليف المباشرة وغير المباشرة.</p>
+            <div class="mt-3 text-sm leading-7 font-medium text-slate-600 transition-all duration-300">
+               <p class="group-hover:hidden" data-i18n="sec2Desc">قائمة المواد (BOM)، أوامر الإنتاج، تخطيط الاحتياجات، وحساب التكاليف المباشرة وغير المباشرة.</p>
+               <ul class="hidden group-hover:block list-disc list-inside space-y-1 text-xs">
+                  <li>الصناعات الغذائية والمشروبات</li>
+                  <li>المنتجات البلاستيكية والمطاطية</li>
+                  <li>مواد التعبئة والتغليف</li>
+                  <li>الصناعات الكيميائية والدوائية</li>
+                  <li>الحديد والصلب وتشكيل المعادن</li>
+                  <li>مواد البناء والأسمنت</li>
+                  <li>الصناعات الهندسية والإلكترونية</li>
+               </ul>
+            </div>
           </article>
 
-          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right">
+          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right group relative overflow-hidden">
             <div class="h-12 w-12 grid place-items-center rounded-2xl bg-purple-50 text-purple-600"><i
                 data-lucide="briefcase-business" class="w-6 h-6"></i></div>
             <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="sec3Title">الشركات الخدمية</h3>
-            <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="sec3Desc">إدارة المشاريع، التكاليف الفعلية، العقود الدورية، الفوترة الذكية، وخدمات الدعم الفني.</p>
+            <div class="mt-3 text-sm leading-7 font-medium text-slate-600 transition-all duration-300">
+               <p class="group-hover:hidden" data-i18n="sec3Desc">إدارة المشاريع، التكاليف الفعلية، العقود الدورية، الفوترة الذكية، وخدمات الدعم الفني.</p>
+               <ul class="hidden group-hover:block list-disc list-inside space-y-1 text-xs">
+                  <li>المقاولات العامة والبناء</li>
+                  <li>التشغيل والصيانة والنظافة</li>
+                  <li>النقل والخدمات اللوجستية</li>
+                  <li>تقنية المعلومات والبرمجيات</li>
+                  <li>الاستشارات (إدارية، مالية، هندسية)</li>
+                  <li>الخدمات الطبية والتعليمية</li>
+                  <li>السياحة والفنادق والعقارات</li>
+               </ul>
+            </div>
           </article>
 
-          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right">
+          <article class="sector-card rounded-3xl border border-slate-200 bg-white p-7 shadow-sm text-right group relative overflow-hidden">
             <div class="h-12 w-12 grid place-items-center rounded-2xl bg-amber-50 text-amber-600"><i
                 data-lucide="network" class="w-6 h-6"></i></div>
             <h3 class="mt-5 text-xl font-black text-slate-950" data-i18n="sec4Title">المجموعات والمؤسسات</h3>
-            <p class="mt-3 text-sm leading-7 font-medium text-slate-600" data-i18n="sec4Desc">إدارة شبكة من الشركات والفروع داخل بيئة موحدة مع تقارير تجميعية مجمعة Consolidated.</p>
+            <div class="mt-3 text-sm leading-7 font-medium text-slate-600 transition-all duration-300">
+               <p class="group-hover:hidden" data-i18n="sec4Desc">إدارة شبكة من الشركات والفروع داخل بيئة موحدة مع تقارير تجميعية مجمعة Consolidated.</p>
+               <ul class="hidden group-hover:block list-disc list-inside space-y-1 text-xs">
+                  <li>المجموعات التجارية والصناعية</li>
+                  <li>المجموعات الاستثمارية والقابضة</li>
+                  <li>الشركات متعددة الأنشطة والفروع</li>
+                  <li>مكاتب إدارة الشركات والمحافظ</li>
+                  <li>مؤسسات غير الربحية والجمعيات</li>
+               </ul>
+            </div>
           </article>
         </div>
       </div>
@@ -1112,7 +1158,7 @@
             class="faq-item rounded-3xl border border-slate-200/80 bg-white shadow-sm hover:shadow-md transition-all duration-300 group">
             <button data-faq-btn
               class="w-full flex items-center justify-between p-6 text-right font-black text-[15px] sm:text-lg text-slate-900 focus:outline-none group-hover:text-brand transition-colors">
-              <span data-i18n="faq2Q">هل ZETIX ERP تدعم الفوترة الإلكترونية المرحلة الثانية (ZATCA Phase 2)؟</span>
+              <span data-i18n="faq2Q">هل ZETIX ERP تدعم الفوترة الإلكترونية (المرحلة الأولى والثانية ZATCA)؟</span>
               <div
                 class="flex-shrink-0 w-9 h-9 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center ms-4 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors">
                 <i data-lucide="chevron-down"
@@ -1141,9 +1187,7 @@
             </button>
             <div
               class="faq-answer px-6 pb-6 text-sm sm:text-[15px] leading-8 font-medium text-slate-600 pt-2 border-t border-slate-100 hidden">
-              <p data-i18n="faq3A">تتراوح المدة حسب نطاق العمل؛ فالباقات الجاهزة الصغيرة قد تستغرق من 2 إلى 4 أسابيع،
-                بينما المشاريع المخصصة للشركات المتوسطة والمصانع تتراوح عادة بين 6 إلى 12 أسبوعاً شاملة التحليل والبرمجة
-                ونقل البيانات والتدريب.</p>
+              <p data-i18n="faq3A">تتراوح مدة تنفيذ الباقات الجاهزة من 1 الى 3 يوم عمل، المشاريع المخصصة بين 2 الى 4 أسابيع عمل.</p>
             </div>
           </div>
 
@@ -1152,7 +1196,7 @@
             class="faq-item rounded-3xl border border-slate-200/80 bg-white shadow-sm hover:shadow-md transition-all duration-300 group">
             <button data-faq-btn
               class="w-full flex items-center justify-between p-6 text-right font-black text-[15px] sm:text-lg text-slate-900 focus:outline-none group-hover:text-brand transition-colors">
-              <span data-i18n="faq4Q">كيف يتم نقل بياناتنا الحالية من الأنظمة القديمة إلى ERPNext؟</span>
+              <span data-i18n="faq4Q">هل يمكننا نقل بياناتنا السابقة بسهولة إلى النظام الجديد؟</span>
               <div
                 class="flex-shrink-0 w-9 h-9 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center ms-4 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors">
                 <i data-lucide="chevron-down"
@@ -1161,12 +1205,14 @@
             </button>
             <div
               class="faq-answer px-6 pb-6 text-sm sm:text-[15px] leading-8 font-medium text-slate-600 pt-2 border-t border-slate-100 hidden">
+              نعم، نستخدم أدوات متقدمة لتنقية واستيراد البيانات من أي نظام سابق بأمان كامل لضمان استمرارية العمل دون انقطاع.</p></div></div>
+
               <!-- FAQ 5 -->
               <div data-faq-item
                 class="faq-item rounded-3xl border border-slate-200/80 bg-white shadow-sm hover:shadow-md transition-all duration-300 group">
                 <button data-faq-btn
                   class="w-full flex items-center justify-between p-6 text-right font-black text-[15px] sm:text-lg text-slate-900 focus:outline-none group-hover:text-brand transition-colors">
-                  <span data-i18n="faq5Q">ما هي خيارات الاستضافة والدعم الفني المتاحة؟</span>
+                  <span data-i18n="faq5Q">أين يتم حفظ البيانات، وما هي خدمات الدعم المتاحة؟</span>
                   <div
                     class="flex-shrink-0 w-9 h-9 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center ms-4 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors">
                     <i data-lucide="chevron-down"
@@ -1195,7 +1241,7 @@
           <div class="grid lg:grid-cols-[1.05fr_.95fr] relative z-10">
             <div class="p-8 lg:p-14">
               <span class="text-xs font-black tracking-widest text-blue-400 uppercase" data-i18n="contactEyebrow">تواصل مع ZETIX ERP</span>
-              <h2 class="mt-3 text-3xl font-black sm:text-4xl leading-tight" data-i18n="readyTitle">هل تحتاج نظام ERP
+              <h2 class="mt-3 text-3xl font-black sm:text-4xl leading-[1.5]" data-i18n="readyTitle">هل تحتاج نظام ERP
                 مطابق لطريقة عمل شركتك؟</h2>
               <p class="mt-4 text-sm font-medium leading-8 text-slate-300" data-i18n="readyDesc">
                 احجز جلسة استشارية أولية مع مهندسينا لمناقشة حجم العمليات، عدد الموظفين، الوحدات والتكاملات المطلوبة.
@@ -1251,8 +1297,24 @@
     </section>
   </main>
 
+  
+    <!-- OUR CLIENTS SECTION -->
+    <section id="clients" class="py-16 bg-white border-t border-slate-200/80">
+      <div class="container-xl text-center">
+        <span class="text-xs font-black tracking-widest text-slate-400 uppercase">عملائنا</span>
+        <h2 class="mt-2 text-2xl font-black text-slate-900">شركاء النجاح</h2>
+        <div class="mt-10 flex flex-wrap justify-center items-center gap-10 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+          <div class="h-12 w-32 bg-slate-200 rounded-lg animate-pulse"></div>
+          <div class="h-12 w-32 bg-slate-200 rounded-lg animate-pulse"></div>
+          <div class="h-12 w-32 bg-slate-200 rounded-lg animate-pulse"></div>
+          <div class="h-12 w-32 bg-slate-200 rounded-lg animate-pulse"></div>
+          <div class="h-12 w-32 bg-slate-200 rounded-lg animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+
   <!-- FOOTER -->
-  <footer class="bg-white border-t border-slate-200/80 pt-16 pb-8">
+  <footer class="bg-white border-t border-slate-200/80 pt-24 pb-12">
     <div class="container-xl">
       <div class="grid gap-12 lg:grid-cols-12">
         <div class="lg:col-span-5">
