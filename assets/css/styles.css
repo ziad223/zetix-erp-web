@@ -176,3 +176,22 @@ h1, h2, h3, h4, h5, h6, button, input, select, textarea, nav, a {
 .modal-backdrop.active .modal-container {
   transform: scale(1) translateY(0);
 }
+
+/* Fix line-height for Arabic Typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.6 !important;
+}
+
+/* Hide Netlify Badge & Other third party badges */
+a[href*="netlify.com"], 
+a[href*="netlify.app"],
+img[src*="netlify.com"],
+.netlify-badge,
+#netlify-badge {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
